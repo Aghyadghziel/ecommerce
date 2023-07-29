@@ -20,6 +20,7 @@ import { Input } from "@/components/ui/input";
 import { toast } from "react-hot-toast";
 import axios from "axios";
 import { useParams, useRouter } from "next/navigation";
+import { AlertModal } from "@/components/ui/modals/alert-modal";
 
 interface SettingsFormProps {
   initialData: Store;
@@ -54,9 +55,15 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({ initialData }) => {
   };
   return (
     <>
+      <AlertModal
+        isOpen={open}
+        onClose={() => setOpen(false)}
+        onConfirm={() => {}}
+        loading={loading}
+      />
       <div className="flex items-center justify-between">
         <Heading title="Settings" description="Manage store preferences" />
-        <Button variant="destructive" size="icon" onClick={() => {}}>
+        <Button variant="destructive" size="icon" onClick={() => setOpen(true)}>
           <Trash className="h-4 w-4" />
         </Button>
       </div>
