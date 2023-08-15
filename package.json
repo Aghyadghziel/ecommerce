@@ -33,6 +33,7 @@
     "lucide-react": "^0.263.1",
     "next": "13.4.12",
     "next-auth": "^4.22.3",
+    "next-cloudinary": "^4.18.0",
     "npx": "^10.2.2",
     "postcss": "8.4.27",
     "push": "^0.0.1",
@@ -48,6 +49,6 @@
     "zustand": "^4.3.9"
   },
   "devDependencies": {
-    "prisma": "^5.0.0"
+    "prisma": "^5.1.1"
   }
 }
