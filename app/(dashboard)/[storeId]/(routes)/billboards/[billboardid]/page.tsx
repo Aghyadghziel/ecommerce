@@ -22,8 +22,3 @@ const BillboardPage = async ({
 };
 
 export default BillboardPage;
-// const BillboardPage = () => {
-//   return <div>sf</div>;
-// };
-
-// export default BillboardPage;
